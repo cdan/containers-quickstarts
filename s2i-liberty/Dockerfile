@@ -1,8 +1,8 @@
 # This image provides a base for building and running WildFly applications.
 # It builds using maven and runs the resulting artifacts on WildFly 10.1.0 Final
 
-FROM websphere-liberty:webProfile7
-
+#FROM websphere-liberty:webProfile7
+FROM　registry.example.com:5000/cdan/liberty:webProfile7
 MAINTAINER Raffaele Spazzoli <rspazzol@redhat.com>
 
 LABEL io.openshift.s2i.scripts-url=image:///usr/local/s2i \
